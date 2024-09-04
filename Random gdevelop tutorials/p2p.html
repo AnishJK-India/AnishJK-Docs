@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Creating a 6-Digit P2P ID and Implementing Multiplayer in GDevelop using THNK - AnishJK Docs</title>
+</head>
+<body>
+    
+    <a class="back" href="index.html"><b>back</b></a>
+    <div class="box2">
+        <h1>Creating a 6-Digit P2P ID and Implementing Multiplayer in GDevelop using THNK</h1>
+        <br>
+        <h2>Overview</h2>
+        <p>This document outlines the steps involved in creating a 6-digit p2p ID and setting up multiplayer functionality in GDevelop using the THNK extension.</p>
+        <hr>
+        <p><h2>Key Steps:</h2>
+            <h2>Project Setup:</h2>
+            
+            
+            Create three scenes: Main Menu, Game, and Join.
+            <img src="thnk\p2p\scenes.png" alt="scenes">
+    </div>
+    <div class="boxhu">
+        <h2>Menu Scene:</h2>
+        <p>
+        Add two buttons: "Host" and "Join". <br>
+        <img class="xlimg" src="thnk\p2p\buttons.png" alt="buttons"> <br>
+
+        <b>Events:</b><br>
+
+        For Generating a P2P Code:<br>
+        <img class="hostimg" src="thnk\p2p\overide.png" alt="p2p code events"> <br>
+          For the "Host" button:<br>
+            Transition to the Game scene.<br>
+        <img class="hostimg" src="thnk\p2p\host.png" alt="host">
+            <br>
+          For the "Join" button:<br>
+            Transition to the Join scene.<br>
+        <img class="hostimg" src="thnk\p2p\join.png" alt="join">
+        </p>
+
+    </div>
+    
+    
+    <div class="boxhu">
+        <h2>Join Scene:</h2>
+     
+        <p>an input box for the player to enter the p2p ID.<br>
+    
+        Add a button to join the game using the entered p2p ID.<br>
+        <img class="xlimg" src="thnk\p2p\joinsc.png" alt="join scene"><br>
+
+        There is only one event here!
+        <img class="hostimg" src="thnk\p2p\joinevent.png" alt="join events">
+
+        </p>
+    </div>
+    
+    <div class="boxhu">
+        <h2>Game Scene:</h2>
+        <p>Add a text object to display the generated p2p ID (initially hidden).<br>
+        <img class="hostimg" src="thnk\p2p\object.png" alt="object"><br>
+        <b>Events:</b><br>
+        Show the p2p ID on the text object.</p>
+        <img class="hostimg" src="thnk\p2p\gamecode.png" alt="join events"><br>
+
+    </div>
+
+    <div class="boxhu">
+        <h2>THNK Extension Integration:</h2>
+        <p>
+            Use THNK's functions to generate the p2p ID and handle multiplayer connections.<br>
+            Refer to THNK's documentation for specific usage details.
+        </p>
+    </div>
+
+    <div class="boxhu">
+        <h2>Additional Resources:</h2>
+        <p>GDevelop Multiplayer documentation:<br> <a href="https://gdevelop.io/blog/make-multiplayer-games-easily"><b>https://gdevelop.io/blog/make-multiplayer-games-easily</b></a><br>
+            THNK - Official Docs:<br> <a href="https://thnk.cloud/docs/"><b>https://thnk.cloud/docs/</b></a></p>
+    </div>
+    <div class="boxhu">
+        <b>Note: THNK and THNK P2P Extensions are Necessary for This Working.</b>
+    </div>
+</body>
+</html>
